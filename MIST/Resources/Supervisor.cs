@@ -11,14 +11,13 @@ using System.Text;
 
 namespace MIST.Resources
 {
-    interface IEmployer
+    internal class Supervisor : Employee
     {
-        const float MROT = 13000;
-        string fName { get; set; }
-        string sName { get; set; }
-        string tName { get; set; }
-        float experience { get; set; }
-        float getSalary();
 
+
+        public float getSalary()
+        {
+            return IEmployee.MROT;
+        }
     }
 }

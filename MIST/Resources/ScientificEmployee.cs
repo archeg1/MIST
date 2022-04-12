@@ -11,7 +11,7 @@ using System.Text;
 
 namespace MIST.Resources
 {
-    class ScientificEmployer : IEmployer
+    class ScientificEmployee : IEmployee
     {
         string _firstName;
         float _experience;
@@ -22,7 +22,7 @@ namespace MIST.Resources
 
         public float getSalary()
         {
-            return (float)(IEmployer.MROT + Math.Pow(_experience, 1/3));
+            return (float)(IEmployee.MROT + Math.Pow(_experience, 1/3));
         }
     }
 }

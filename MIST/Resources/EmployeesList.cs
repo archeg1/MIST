@@ -14,31 +14,42 @@ namespace MIST.Resources
     class EmployeesList
     {
 
-        private List<IEmployer> employers;
+        private List<IEmployee> employers;
+
+        public delegate void EmployersHandler();
+
+        public event EmployersHandler? EmployersCountChanged;
 
         public EmployeesList()
         {
+            employers = new List<IEmployee>();
+        }
 
+        public EmployeesList(List<IEmployee> employees)
+        {
+            this.employers = employees;
         }
 
         public void Clear()
         {
             employers.Clear();
+            EmployersCountChanged?.Invoke();
         }
 
-        public float GetTotalSalary()
+        public double GetTotalSalary()
         {
             return employers.Sum(item => item.getSalary());
         }
 
-        public float GetMidSalary()
+        public double GetMidSalary()
         {
             return employers.Average(item => item.getSalary());
         }
 
-        public void AddEmployer(IEmployer employer)
+        public void AddEmployer(IEmployee employer)
         {
             employers.Add(employer);
+            EmployersCountChanged?.Invoke();
         }
     }
 }
