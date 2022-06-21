@@ -11,7 +11,7 @@ using System.Text;
 
 namespace MIST.Resources
 {
-    class ScientificEmployee : IEmployee
+    class ScientificEmployee : Employee
     {
         string _firstName;
         float _experience;

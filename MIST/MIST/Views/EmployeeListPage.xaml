@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MIST.EmployeeListPage"
+             Title="MIST">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Добавить работника" Command="{Binding CreateEmployeeCommand}"></Button>
+            <ListView x:Name="employeeList" ItemsSource="{Binding employees.Employees}" SelectedItem="{Binding SelectedEmployee, Mode=TwoWay}" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout>
+                                    <Label Text="{Binding FName}" FontSize="Medium" />
+                                    <Label Text="{Binding SName}" FontSize="Small" />
+                                    <Label Text="{Binding TName}" FontSize="Small" />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Сумма всех зарплат:"/>
+                <Label Text="{Binding employees.TotalSolary}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

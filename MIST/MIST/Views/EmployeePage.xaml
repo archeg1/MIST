@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MIST.Views.EmployeePage" Title="Информация о сотруднике">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout x:Name="ContentStack" x:FieldModifier="protected">
+            <Label Text="Имя"/>
+            <Entry Text="{Binding fName}" ClearButtonVisibility="WhileEditing"></Entry>
+            <Label Text="Фамилия"/>
+            <Entry Text="{Binding sName}"></Entry>
+            <Label Text="Отчество"/>
+            <Entry Text="{Binding tName}"></Entry>
+            <Label Text="Возраст (лет)"/>
+            <Entry Text="{Binding Age}" TextChanged="OnTextChanged" Keyboard="Numeric"/>
+            <Label Text="Стаж (лет)"/>
+            <Entry Text="{Binding Experience}" TextChanged="OnTextChanged" Keyboard="Numeric"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button Text="OK" Command="{Binding ListViewModel.SaveEmployeeCommand}" CommandParameter="{Binding}"/>
+                <Button Text="Удалить" Command="{Binding ListViewModel.DeleteEmployeeCommand}" CommandParameter="{Binding}"/>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

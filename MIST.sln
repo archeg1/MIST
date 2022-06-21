@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32106.194
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIST", "MIST\MIST.csproj", "{F1A62C86-786E-4B5D-A4FB-E60CFA250F89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIST.Android", "MIST\MIST.Android\MIST.Android.csproj", "{9684A4C0-45B3-4205-AE6B-9864993FE03A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIST", "MIST\MIST\MIST.csproj", "{61B25D1A-595E-4976-AB24-474C7C2156EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,17 +13,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F1A62C86-786E-4B5D-A4FB-E60CFA250F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1A62C86-786E-4B5D-A4FB-E60CFA250F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1A62C86-786E-4B5D-A4FB-E60CFA250F89}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{F1A62C86-786E-4B5D-A4FB-E60CFA250F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1A62C86-786E-4B5D-A4FB-E60CFA250F89}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1A62C86-786E-4B5D-A4FB-E60CFA250F89}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9684A4C0-45B3-4205-AE6B-9864993FE03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9684A4C0-45B3-4205-AE6B-9864993FE03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9684A4C0-45B3-4205-AE6B-9864993FE03A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9684A4C0-45B3-4205-AE6B-9864993FE03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9684A4C0-45B3-4205-AE6B-9864993FE03A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9684A4C0-45B3-4205-AE6B-9864993FE03A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{61B25D1A-595E-4976-AB24-474C7C2156EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61B25D1A-595E-4976-AB24-474C7C2156EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61B25D1A-595E-4976-AB24-474C7C2156EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61B25D1A-595E-4976-AB24-474C7C2156EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {770AF550-E1A8-4AEB-8609-B8AC45C365EF}
+		SolutionGuid = {A9099C18-EFAB-4259-AE23-63423263AB12}
 	EndGlobalSection
 EndGlobal
